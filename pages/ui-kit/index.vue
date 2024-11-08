@@ -33,6 +33,20 @@ const review = {
     "This course is beneficial and informative. I have learned much about UI/UX design from scratch to final. Especially thanks to Daniel Schifano for his UI/UX design effort. I also thank Andrei Neagoie for the Web...",
   image: null,
 };
+
+const mostCourses = {
+  image: "/images/course-thumbnail.png",
+  logo: "/images/course-thumbnail.png",
+  title: "Complete A.I. & Machine Learning, Data Science...",
+  instructors: ["Andrei Neagoie", "Daniel Bourke"],
+  rating: 4.6,
+  reviews: 24457,
+  totalHours: "44",
+  lectures: "384",
+  level: "All Levels",
+  currentPrice: 11.99,
+  originalPrice: 74.99,
+};
 </script>
 
 <template>
@@ -58,6 +72,13 @@ const review = {
         <div>
           <h2 class="text-lg font-bold mb-4">Reviews</h2>
           <CourseReviewCard :reviewData="review" />
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div>
+          <h2 class="text-lg font-bold mb-4">Most Courses</h2>
+          <CourseMostCoursesCard :courseData="mostCourses" />
         </div>
       </div>
     </div>
