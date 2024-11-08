@@ -11,6 +11,18 @@ const course = {
   originalPrice: "$74.99",
   isInWishlist: false,
 };
+
+// FrequentlyBoughtTogether component:
+const courseData = {
+  title: "Complete Web design: from Figma to Webflow - 2024 UI",
+  thumbnail: "/images/course-thumbnail.png",
+  discountedPrice: "$11.99",
+  originalPrice: "$74.99",
+  authors: ["Andrei Neagoic", "Daniel Schifano"],
+  rating: 4.8,
+  reviews: 33154,
+  isBestseller: true,
+};
 </script>
 
 <template>
@@ -23,6 +35,13 @@ const course = {
       <div class="mt-4">
         <!-- Courses -->
         <CourseItem :course="course" />
+      </div>
+
+      <div class="mt-4">
+        <div>
+          <h2 class="text-lg font-bold mb-4">Frequently Bought Together</h2>
+          <CourseFrequentlyBoughtTogether :courseData="courseData" />
+        </div>
       </div>
     </div>
   </main>
