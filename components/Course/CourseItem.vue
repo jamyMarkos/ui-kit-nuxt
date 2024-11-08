@@ -1,4 +1,5 @@
-<script>
+<script setup>
+import { defineProps } from "vue";
 /**
  * CourseItem component:
  * const course = {
