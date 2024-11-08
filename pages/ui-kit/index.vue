@@ -23,6 +23,16 @@ const courseData = {
   reviews: 33154,
   isBestseller: true,
 };
+
+// ReviewCard component:
+const review = {
+  reviewerName: "Md. Tanvir",
+  rating: 5,
+  datePosted: "2 months ago",
+  reviewText:
+    "This course is beneficial and informative. I have learned much about UI/UX design from scratch to final. Especially thanks to Daniel Schifano for his UI/UX design effort. I also thank Andrei Neagoie for the Web...",
+  image: null,
+};
 </script>
 
 <template>
@@ -41,6 +51,13 @@ const courseData = {
         <div>
           <h2 class="text-lg font-bold mb-4">Frequently Bought Together</h2>
           <CourseFrequentlyBoughtTogether :courseData="courseData" />
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div>
+          <h2 class="text-lg font-bold mb-4">Reviews</h2>
+          <CourseReviewCard :reviewData="review" />
         </div>
       </div>
     </div>
