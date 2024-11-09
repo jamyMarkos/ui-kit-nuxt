@@ -51,7 +51,7 @@ const mostCourses = {
 
 <template>
   <main class="max-w-screen-lg mx-auto py-10">
-    <div class="h-screen">
+    <div class="min-h-screen">
       <div>
         <h2>UI Kit</h2>
       </div>
@@ -81,6 +81,17 @@ const mostCourses = {
           <CourseMostCoursesCard :courseData="mostCourses" />
         </div>
       </div>
+
+      <div class="mt-4">
+        <div>
+          <h2 class="text-lg font-bold mb-4">Instructors</h2>
+          <CourseInstructors />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <Footer />
     </div>
   </main>
 </template>
